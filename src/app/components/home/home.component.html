@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="jumbotron animated fadeIn fast lol0">
+        <h1 class="display-4 color-personal">Invocadores LOL</h1>
+        <p class="lead color-personal">Esta es una aplicación de League of Legends</p>
+        <br><br><br><br><br><br><br><br>
+    </div>
+    <div class="card-columns">
+        <!-- *ngFor="let heroe of heroes; let i = index" -->
+        <app-campeon-tarjeta (campeonSeleccionado)="verCampeon( $event )" [campeon]="foo" [index]="i" *ngFor="let foo of campeones; let i = index"></app-campeon-tarjeta>
+    </div>
+</div>
